@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('li').hide();
+      $('.omnibox').on('keypress', function(e) {
+          $('.video').fadeIn(200);
+          $('.music').delay(100).fadeIn(200);
+      })
+    })
+  </script>
+</head>
+<body>
+  <div class="header">
+    snpp.it
+  </div>
+  <textarea class="omnibox" placeholder="Type something or paste a link here!"></textarea>
+  <div class="tags">
+    <ul>
+      <li class="video">video <span class='remove'>+</span></li>
+      <li class="music">music <span class='remove'>+</span></li>
+    </ul>
+  </div>
+</body>
+</html>
